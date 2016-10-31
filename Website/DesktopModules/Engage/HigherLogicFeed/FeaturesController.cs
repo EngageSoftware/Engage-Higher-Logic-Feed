@@ -14,6 +14,7 @@ namespace Engage.Dnn.HigherLogicFeed
     public class FeaturesController
     {
         /// <summary>The prefix to use for settings names</summary>
-        public const string SettingsPrefix = "Higher Logic Feed";
+        public const string SettingsPrefix = "Engage_Higher_Logic_Feed_";
+
     }
 }

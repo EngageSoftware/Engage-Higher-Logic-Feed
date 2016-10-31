@@ -30,7 +30,9 @@ namespace Engage.Dnn.HigherLogicFeed
         /// <summary>Updates the settings.</summary>
         public void UpdateSettings()
         {
-            this.UpdatingSettings?.Invoke(this, new UpdatingSettingsEventArgs());
+            this.UpdatingSettings?.Invoke(
+                this,
+                new UpdatingSettingsEventArgs(this.HLUserNameTxt.Text, this.HLPasswordTxt.Text, this.HLIAMKeyTxt.Text, this.DiscussionKeyTxt.Text, Convert.ToInt32(this.MaxToRetrieveTxt.Text), this.IncludeStaffChk.Checked));
         }
     }
 }

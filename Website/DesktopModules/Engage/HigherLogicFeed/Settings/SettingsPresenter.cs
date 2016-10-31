@@ -7,6 +7,9 @@ namespace Engage.Dnn.HigherLogicFeed
     using System;
     using System.Linq;
 
+    using DotNetNuke.Common.Utilities;
+    using DotNetNuke.Entities.Host;
+    using DotNetNuke.Security;
     using DotNetNuke.Web.Mvp;
 
     using WebFormsMvp;
@@ -30,6 +33,36 @@ namespace Engage.Dnn.HigherLogicFeed
         {
             try
             {
+                this.View.Model.HigherLogicUserName =
+                    HigherLogicFeedSettings.HigherLogicUsername.GetValueAsStringFor(
+                        FeaturesController.SettingsPrefix,
+                        this.ModuleContext.Configuration,
+                        HigherLogicFeedSettings.HigherLogicUsername.DefaultValue);
+
+                this.View.Model.HigherLogicIAMKey =
+                    HigherLogicFeedSettings.HigherLogicIAMKey.GetValueAsStringFor(
+                        FeaturesController.SettingsPrefix,
+                        this.ModuleContext.Configuration,
+                        HigherLogicFeedSettings.HigherLogicIAMKey.DefaultValue);
+
+                this.View.Model.HigherLogicDiscussionKey =
+                    HigherLogicFeedSettings.HigherLogicDiscussionKey.GetValueAsStringFor(
+                        FeaturesController.SettingsPrefix,
+                        this.ModuleContext.Configuration,
+                        HigherLogicFeedSettings.HigherLogicDiscussionKey.DefaultValue);
+
+                this.View.Model.MaxDiscussionsToRetrieve =
+                    HigherLogicFeedSettings.MaxDiscussionsToRetrieve.GetValueAsInt32For(
+                        FeaturesController.SettingsPrefix,
+                        this.ModuleContext.Configuration,
+                        HigherLogicFeedSettings.MaxDiscussionsToRetrieve.DefaultValue);
+
+                this.View.Model.IncludeStaff =
+                    HigherLogicFeedSettings.IncludeStaff.GetValueAsBooleanFor(
+                        FeaturesController.SettingsPrefix,
+                        this.ModuleContext.Configuration,
+                        HigherLogicFeedSettings.IncludeStaff.DefaultValue);
+
             }
             catch (Exception exc)
             {
@@ -44,6 +77,17 @@ namespace Engage.Dnn.HigherLogicFeed
         {
             try
             {
+                if (!string.IsNullOrEmpty(e.HigherLogicPassword))
+                {
+                    var encryptedPassword = FIPSCompliant.EncryptAES(e.HigherLogicPassword, Config.GetDecryptionkey(), Host.GUID);
+                    HigherLogicFeedSettings.HigherLogicPassword.Set(FeaturesController.SettingsPrefix, this.ModuleContext.Configuration, encryptedPassword);
+                }
+
+                HigherLogicFeedSettings.HigherLogicUsername.Set(FeaturesController.SettingsPrefix, this.ModuleContext.Configuration, e.HigherLogicUserName);
+                HigherLogicFeedSettings.HigherLogicIAMKey.Set(FeaturesController.SettingsPrefix, this.ModuleContext.Configuration, e.HigherLogicIAMKey);
+                HigherLogicFeedSettings.HigherLogicDiscussionKey.Set(FeaturesController.SettingsPrefix, this.ModuleContext.Configuration, e.HigherLogicDiscussionKey);
+                HigherLogicFeedSettings.MaxDiscussionsToRetrieve.Set(FeaturesController.SettingsPrefix, this.ModuleContext.Configuration, e.MaxDiscussionsToRetrieve);
+                HigherLogicFeedSettings.IncludeStaff.Set(FeaturesController.SettingsPrefix, this.ModuleContext.Configuration, e.IncludeStaff);
             }
             catch (Exception exc)
             {

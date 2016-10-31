@@ -1,9 +1,9 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="Engage: Higher Logic Feed" type="Module" version="0.1.0">
+    <package name="Engage: Higher Logic Feed" type="Module" version="1.0.0">
       <friendlyName>Engage: Higher Logic Feed</friendlyName>
-      <description></description>
-      <iconFile>DesktopModules/Engage/Engage-icon32.png</iconFile>
+      <description>Engage: Higher Logic Feed is a module for DotNetNuke which will render a list of dicussion posts from Higher Logic.</description>
+      <iconFile>DesktopModules/Engage/Engage-icon.png</iconFile>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>
@@ -11,10 +11,10 @@
         <email>support@engagemodules.com</email>
       </owner>
       <license>This is a custom package developed by Engage Software for Engage. This package is intended for the exclusive use by Engage. Any use of this package outside this intention is at the discretion of Engage. If you have additional questions regarding the appropriate use of this module, please contact Engage Software at http://www.engagesoftware.com.</license>
-      <releaseNotes src="ReleaseNotes_0.1.0.htm" />
+      <releaseNotes src="ReleaseNotes_01.00.00.htm" />
       <azureCompatible>true</azureCompatible>
       <dependencies>
-        <dependency type="CoreVersion">5.0.0</dependency>
+        <dependency type="CoreVersion">7.3.2</dependency>
       </dependencies>
       <components>
         <component type="ResourceFile">
@@ -29,8 +29,8 @@
           <scripts>
             <basePath>DesktopModules/Engage/SQL</basePath>
             <script type="Install">
-              <name>0.1.0.sql</name>
-              <version>0.1.0</version>
+              <name>1.0.0.sql</name>
+              <version>1.0.0</version>
             </script>
             <script type="UnInstall">
               <name>Uninstall.sql</name>

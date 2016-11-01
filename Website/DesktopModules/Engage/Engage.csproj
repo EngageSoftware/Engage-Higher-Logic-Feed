@@ -160,10 +160,6 @@
   <ItemGroup>
     <Content Include="HigherLogicFeed\Settings\App_LocalResources\Settings.ascx.resx" />
     <Content Include="HigherLogicFeed\ViewHigherLogicFeed\App_LocalResources\ViewHigherLogicFeed.ascx.resx" />
-    <Content Include="HigherLogicFeed\ViewHigherLogicFeed\Main.elm" />
-    <Content Include="HigherLogicFeed\ViewHigherLogicFeed\Elm\Model.elm" />
-    <Content Include="HigherLogicFeed\ViewHigherLogicFeed\Elm\Update.elm" />
-    <Content Include="HigherLogicFeed\ViewHigherLogicFeed\Elm\View.elm" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />

@@ -112,6 +112,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HigherLogicFeed\Components\AuthToken.cs" />
+    <Compile Include="HigherLogicFeed\Components\ContactConcise.cs" />
+    <Compile Include="HigherLogicFeed\Components\DiscussionPost.cs" />
+    <Compile Include="HigherLogicFeed\Components\DocumentAttachment.cs" />
+    <Compile Include="HigherLogicFeed\Components\HigherLogicService.cs" />
+    <Compile Include="HigherLogicFeed\Components\InvalidResponse.cs" />
     <Compile Include="HigherLogicFeed\FeaturesController.cs" />
     <Compile Include="HigherLogicFeed\Settings\SettingsViewModel.cs" />
     <Compile Include="HigherLogicFeed\ViewHigherLogicFeed\ViewHigherLogicFeedViewModel.cs" />

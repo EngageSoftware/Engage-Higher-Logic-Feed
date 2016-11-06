@@ -25,18 +25,6 @@
             </resourceFile>
           </resourceFiles>
         </component>
-        <component type="Script">
-          <scripts>
-            <basePath>DesktopModules/Engage/SQL</basePath>
-            <script type="Install">
-              <name>1.0.0.sql</name>
-              <version>1.0.0</version>
-            </script>
-            <script type="UnInstall">
-              <name>Uninstall.sql</name>
-            </script>
-          </scripts>
-        </component>
         <component type="Module">
           <desktopModule>
             <moduleName>Engage: Higher Logic Feed</moduleName>

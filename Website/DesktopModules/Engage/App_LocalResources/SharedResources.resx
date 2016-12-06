@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,124 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AttachmentItemTemplate.Help" xml:space="preserve">
-    <value>Please supply the attachemnt item template that will render the post attachements. </value>
-  </data>
   <data name="AttachmentItemTemplate.Text" xml:space="preserve">
-    <value>Post Attachment Item Template:</value>
-  </data>
-  <data name="DateFormat.Help" xml:space="preserve">
-    <value>Please supply the date format for the any dates rendered in the template.</value>
-  </data>
-  <data name="DateFormat.Required" xml:space="preserve">
-    <value>You must supply a date format.</value>
-  </data>
-  <data name="DateFormat.Text" xml:space="preserve">
-    <value>Date Format:</value>
-  </data>
-  <data name="DiscussionKey.Help" xml:space="preserve">
-    <value>Please supply the GUID for the discussion in which you want to retrieve posts for.</value>
-  </data>
-  <data name="DiscussionKey.Required" xml:space="preserve">
-    <value>You must supply a discussion key to retrieve posts.</value>
-  </data>
-  <data name="DiscussionKey.Text" xml:space="preserve">
-    <value>Discussion Key:</value>
-  </data>
-  <data name="FooterTemplate.Help" xml:space="preserve">
-    <value>Please supply the footer template that will be used to wrap the item template. </value>
+    <value />
   </data>
   <data name="FooterTemplate.Text" xml:space="preserve">
-    <value>Footer Template:</value>
-  </data>
-  <data name="HeaderTemplate.Help" xml:space="preserve">
-    <value>Please supply the template used for the header of the feed listing.</value>
+    <value>&lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
   </data>
   <data name="HeaderTemplate.Text" xml:space="preserve">
-    <value>Header Template</value>
-  </data>
-  <data name="HLIAMKey.Help" xml:space="preserve">
-    <value>Please supply the Higher Logic IAMKey to communicate with the API.</value>
-  </data>
-  <data name="HLIAMKey.Required" xml:space="preserve">
-    <value>You must supply a Higher Logic IAMKey.</value>
-  </data>
-  <data name="HLIAMKey.Text" xml:space="preserve">
-    <value>Higher Logic IAMKey:</value>
-  </data>
-  <data name="HLPassword.Help" xml:space="preserve">
-    <value>Please supply the account password to log into Higher Logic to retrieve the discussion feed.</value>
-  </data>
-  <data name="HLPassword.Required" xml:space="preserve">
-    <value>You must supply a password for the Higher Logic account.</value>
-  </data>
-  <data name="HLPassword.Text" xml:space="preserve">
-    <value>Higher Logic Password:</value>
-  </data>
-  <data name="HLUserName.Help" xml:space="preserve">
-    <value>Please supply the account username to log into Higher Logic to retrieve the discussion feed.</value>
-  </data>
-  <data name="HLUserName.Required" xml:space="preserve">
-    <value>You must supply a username for the Higer Logic account.</value>
-  </data>
-  <data name="HLUserName.Text" xml:space="preserve">
-    <value>Higher Logic Username:</value>
-  </data>
-  <data name="IncludeStaff.Help" xml:space="preserve">
-    <value>Check this option if you want to include staff posts in the disucssion feed. </value>
-  </data>
-  <data name="IncludeStaff.Text" xml:space="preserve">
-    <value>Include Staff Posts:</value>
-  </data>
-  <data name="ItemTemplate.Help" xml:space="preserve">
-    <value>Please supply the template that will be used to render each individual post.</value>
-  </data>
-  <data name="ItemTemplate.Required" xml:space="preserve">
-    <value>You must supply the item template to render a post on the screen.</value>
+    <value>&lt;div class="border"&gt;
+    &lt;div class="container"&gt;
+        &lt;ul&gt;</value>
   </data>
   <data name="ItemTemplate.Text" xml:space="preserve">
-    <value>Item Template:</value>
+    <value>&lt;li&gt;
+	&lt;div class="item-header-container"&gt;
+		&lt;div class="item-image-container"&gt;
+			&lt;a href="[HL:Author:LinkToProfile]" class="user-image-container"&gt;
+				&lt;img class="item-image" src="[HL:Author:PictureUrl]" /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class="item-title-container"&gt;
+			&lt;a title="[HL:Discussion:Subject]" href="[HL:Discussion:LinkToMessage]"&gt;[HL:Discussion:Subject]&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class="item-by-line-container"&gt;
+				&lt;span&gt;By: &lt;/span&gt;&lt;a href="[HL:Author:LinkToProfile]"&gt;[HL:Author:DisplayName]&lt;/a&gt;
+				&lt;span&gt;, [HL:Discussion:DatePosted]&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class="item-posted-in-container"&gt;
+				&lt;span&gt;Posted in: &lt;/span&gt;&lt;a href="[HL:Discussion:LinkToDiscussion]"&gt;[HL:Discussion:DiscussionName]&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="item-body-container"&gt;[HL:Discussion:Body]&lt;/div&gt;
+&lt;/li&gt;</value>
   </data>
-  <data name="MaxContentLength.Help" xml:space="preserve">
-    <value>Please supply the number of characters for the content length.</value>
-  </data>
-  <data name="MaxContentLength.Required" xml:space="preserve">
-    <value>You must supply the maximum content length.</value>
-  </data>
-  <data name="MaxContentLength.Text" xml:space="preserve">
-    <value>Maximum Content Length. </value>
-  </data>
-  <data name="MaxSubjectLength.Help" xml:space="preserve">
-    <value>Please supply the number of characters for the subject content length.</value>
-  </data>
-  <data name="MaxSubjectLength.Required" xml:space="preserve">
-    <value>You must supply the maximum subject content length.</value>
-  </data>
-  <data name="MaxSubjectLength.Text" xml:space="preserve">
-    <value>Maximum Subject Length:</value>
-  </data>
-  <data name="MaxToRetrieve.Help" xml:space="preserve">
-    <value>Please supply the number of posts in which you would like to retrieve. </value>
-  </data>
-  <data name="MaxToRetrieve.Required" xml:space="preserve">
-    <value>You must supply the number of posts to retrieve.</value>
-  </data>
-  <data name="MaxToRetrieve.Text" xml:space="preserve">
-    <value>Max Post to Retrieve:</value>
-  </data>
-  <data name="NoRecordsTemplate.Help" xml:space="preserve">
-    <value>Please supply the markup that will be used when no records are returned from the Higher Logic API.</value>
+  <data name="ModuleNeedsToBeConfigured.Text" xml:space="preserve">
+    <value>This module still needs to be configured. Please open the module settings and configure this module.</value>
   </data>
   <data name="NoRecordsTemplate.Text" xml:space="preserve">
-    <value>No Records Template:</value>
-  </data>
-  <data name="DnnTokenSettings.Text" xml:space="preserve">
-    <value>DNN Token Reference</value>
-  </data>
-  <data name="HLTokenSettings.Text" xml:space="preserve">
-    <value>Higher Logic Token Reference</value>
-  </data>
-  <data name="MainSettings.Text" xml:space="preserve">
-    <value>Main Settings</value>
+    <value>&lt;li&gt;
+    &lt;div class="empty"&gt;No data found.&lt;/div&gt;
+&lt;/li&gt;</value>
   </data>
 </root>

@@ -32,7 +32,7 @@ namespace Engage.Dnn.HigherLogicFeed
         {
             this.UpdatingSettings?.Invoke(
                 this,
-                new UpdatingSettingsEventArgs(this.HLUserNameTxt.Text, this.HLPasswordTxt.Text, this.HLIAMKeyTxt.Text, this.DiscussionKeyTxt.Text, Convert.ToInt32(this.MaxToRetrieveTxt.Text), this.IncludeStaffChk.Checked));
+                new UpdatingSettingsEventArgs(this.HLUserNameTxt.Text, this.HLPasswordTxt.Text, this.HLIAMKeyTxt.Text, this.DiscussionKeyTxt.Text, Convert.ToInt32(this.MaxToRetrieveTxt.Text), this.IncludeStaffChk.Checked, this.DateFormatTxt.Text, this.HeaderTemplateTxt.Text, this.ItemTemplateTxt.Text, this.FooterTemplateTxt.Text, this.NoRecordsTemplateTxt.Text, this.AttachmentItemTemplateTxt.Text, Convert.ToInt32(this.MaxContentLengthTxt.Text), Convert.ToInt32(this.MaxSubjectLengthTxt.Text)));
         }
     }
 }

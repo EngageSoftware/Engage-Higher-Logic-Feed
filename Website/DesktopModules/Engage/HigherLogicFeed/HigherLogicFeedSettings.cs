@@ -34,5 +34,41 @@ namespace Engage.Dnn.HigherLogicFeed
         /// <summary><c>True</c> if the retrieved discussion posts should include staff posts; otherwise, <c>False</c>.</summary>
         [SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification = "Setting<T> is immutable")]
         public static readonly Setting<bool> IncludeStaff = new Setting<bool>("IncludeStaff", SettingScope.TabModule, false);
+
+        /// <summary>Defines the maximum length for the content of a discussion post.</summary>
+        [SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification = "Setting<T> is immutable")]
+        public static readonly Setting<int> MaxContentLength = new Setting<int>("MaxContentLength", SettingScope.TabModule, 100);
+
+        /// <summary>Defines the maximum length for the subject of a dicussion post.</summary>
+        [SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification = "Setting<T> is immutable")]
+        public static readonly Setting<int> MaxSubjectLength = new Setting<int>("MaxSubjectLength", SettingScope.TabModule, 100);
+
+        /// <summary>Defines whether or not to cache the discussion posts.</summary>
+        [SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification = "Setting<T> is immutable")]
+        public static readonly Setting<bool> CacheDiscussionPosts = new Setting<bool>("CacheDiscussionPosts", SettingScope.TabModule, false);
+
+        /// <summary>Defines the header template for the feed.</summary>
+        [SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification = "Setting<T> is immutable")]
+        public static readonly Setting<string> HeaderTemplate = new Setting<string>("HeaderTemplate", SettingScope.TabModule, string.Empty);
+
+        /// <summary>Defines the footer template for the feed.</summary>
+        [SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification = "Setting<T> is immutable")]
+        public static readonly Setting<string> FooterTemplate = new Setting<string>("FooterTemplate", SettingScope.TabModule, string.Empty);
+
+        /// <summary>Defines the item template for the feed.</summary>
+        [SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification = "Setting<T> is immutable")]
+        public static readonly Setting<string> ItemTemplate = new Setting<string>("ItemTemplate", SettingScope.TabModule, string.Empty);
+
+        /// <summary>Defines the no records template for the feed.</summary>
+        [SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification = "Setting<T> is immutable")]
+        public static readonly Setting<string> NoRecordsTemplate = new Setting<string>("NoRecordsTemplate", SettingScope.TabModule, string.Empty);
+
+        /// <summary>Defines the attachment template for the feed.</summary>
+        [SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification = "Setting<T> is immutable")]
+        public static readonly Setting<string> AttachmentItemTemplate = new Setting<string>("AttachmentItemTemplate", SettingScope.TabModule, string.Empty);
+
+        /// <summary>Defines the date format for the higher logic feed.</summary>
+        [SuppressMessage("Microsoft.Security", "CA2104:DoNotDeclareReadOnlyMutableReferenceTypes", Justification = "Setting<T> is immutable")]
+        public static readonly Setting<string> DateFormat = new Setting<string>("DateFormat", SettingScope.TabModule, "MM/dd/yyyy");
     }
 }

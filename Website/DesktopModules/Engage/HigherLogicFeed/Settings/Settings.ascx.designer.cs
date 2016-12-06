@@ -58,6 +58,24 @@ namespace Engage.Dnn.HigherLogicFeed {
         protected global::System.Web.UI.WebControls.TextBox MaxToRetrieveTxt;
         
         /// <summary>
+        /// MaxContentLengthTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox MaxContentLengthTxt;
+        
+        /// <summary>
+        /// MaxSubjectLengthTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox MaxSubjectLengthTxt;
+        
+        /// <summary>
         /// IncludeStaffChk control.
         /// </summary>
         /// <remarks>
@@ -65,5 +83,59 @@ namespace Engage.Dnn.HigherLogicFeed {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox IncludeStaffChk;
+        
+        /// <summary>
+        /// DateFormatTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox DateFormatTxt;
+        
+        /// <summary>
+        /// HeaderTemplateTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox HeaderTemplateTxt;
+        
+        /// <summary>
+        /// ItemTemplateTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ItemTemplateTxt;
+        
+        /// <summary>
+        /// NoRecordsTemplateTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox NoRecordsTemplateTxt;
+        
+        /// <summary>
+        /// FooterTemplateTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox FooterTemplateTxt;
+        
+        /// <summary>
+        /// AttachmentItemTemplateTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox AttachmentItemTemplateTxt;
     }
 }

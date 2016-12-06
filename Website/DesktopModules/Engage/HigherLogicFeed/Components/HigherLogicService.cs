@@ -12,7 +12,6 @@ namespace Engage.Dnn.HigherLogicFeed.HigherLogicFeed.Components
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
     using System.Web.Caching;
-    using System.Web.UI.MobileControls;
 
     using DotNetNuke.Common.Utilities;
 
@@ -59,6 +58,8 @@ namespace Engage.Dnn.HigherLogicFeed.HigherLogicFeed.Components
         /// <summary>Gets the discussion posts.</summary>
         /// <param name="discussionKey">The discussion key.</param>
         /// <param name="maxNumberToRetrieve">The maximum number to retrieve.</param>
+        /// <param name="maxSubjectLength">Maximum length of the subject.</param>
+        /// <param name="maxContentLength">Maximum length of the content.</param>
         /// <param name="includeStaff">if set to <c>true</c> [include staff].</param>
         /// <param name="iamkey">The iamkey.</param>
         /// <param name="authToken">The authentication token.</param>
@@ -66,6 +67,8 @@ namespace Engage.Dnn.HigherLogicFeed.HigherLogicFeed.Components
         public static async Task<IEnumerable<DiscussionPost>> GetDiscussionPosts(
             string discussionKey,
             int maxNumberToRetrieve,
+            int maxSubjectLength,
+            int maxContentLength,
             bool includeStaff,
             string iamkey,
             string authToken)

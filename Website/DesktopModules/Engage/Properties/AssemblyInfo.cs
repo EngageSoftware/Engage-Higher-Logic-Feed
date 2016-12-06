@@ -6,15 +6,15 @@ using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Engage DNN Extensions")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Engage Higher Logic Feed DNN Extensions")]
+[assembly: AssemblyDescription("A templatable feed from a higher logic discussion board.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Engage")]
+[assembly: AssemblyCompany("Engage Software")]
 [assembly: AssemblyProduct("Engage Higher Logic Feed")]
 [assembly: AssemblyCopyright("Copyright © Engage 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(true)]
-[assembly: AssemblyVersion("0.1.0.*")]
-[assembly: AssemblyFileVersion("0.1.0.0")]
+[assembly: AssemblyVersion("1.0.0.*")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

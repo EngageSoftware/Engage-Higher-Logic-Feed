@@ -158,7 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HigherLogicFeed\module.less" />
-    <Content Include="ReleaseNotes_00.01.00.htm" />
+    <Content Include="ReleaseNotes_01.00.00.htm" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

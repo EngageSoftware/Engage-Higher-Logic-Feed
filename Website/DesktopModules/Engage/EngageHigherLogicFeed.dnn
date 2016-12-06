@@ -3,7 +3,6 @@
     <package name="Engage: Higher Logic Feed" type="Module" version="1.0.0">
       <friendlyName>Engage: Higher Logic Feed</friendlyName>
       <description>Engage: Higher Logic Feed is a module for DotNetNuke which will render a list of dicussion posts from Higher Logic.</description>
-      <iconFile>DesktopModules/Engage/Engage-icon.png</iconFile>
       <owner>
         <name>Engage Software</name>
         <organization>Engage Software</organization>

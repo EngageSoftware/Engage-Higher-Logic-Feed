@@ -153,8 +153,14 @@
     <None Include="EngageHigherLogicFeed.build" />
     <None Include="Correctness, Design, Globalization, and Security.ruleset" />
     <Content Include="HigherLogicFeed\ViewHigherLogicFeed\ViewHigherLogicFeed.ascx" />
-    <Content Include="web.config" />
     <Content Include="packages.config" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="HigherLogicFeed\module.less" />

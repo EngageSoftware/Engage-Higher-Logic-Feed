@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "engage-dnn-javascript-libraries": "git://github.com/engagesoftware/DNN-JavaScript-Libraries.git"
+    "engage-dnn-javascript-libraries": "git://github.com/engagesoftware/DNN-JavaScript-Libraries.git",
+    "snyk": "^1.88.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -59,7 +60,10 @@
     "build": "gulp build",
     "package": "gulp package",
     "start": "gulp watch",
-    "test": "gulp test"
+    "test": "gulp test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
-  "author": "Engage Software"
+  "author": "Engage Software",
+  "snyk": true
 }
